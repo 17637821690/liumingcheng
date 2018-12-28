@@ -3,39 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../css/2018-12.14.css">
-    <script>
-        window.onload = function () {
-            var oBigBox = document.getElementById('bigbox');
-            var oA = oBigBox.getElementsByTagName('a');
-            var aH5 = oBigBox.getElementsByTagName('h5');
-            // var iNow = 0;
-            for (var i = 0; i < oA.length; i++) {
-                oA[i].index = i;
-                oA[i].onmouseover = function () {
-                    // iNow = this.index;
-                    for (var i = 0; i < oA.length; i++) {
-                        oA[i].className = '';
-                        aH5[i].className = '';
-                    }
-                    this.className = 'top';
-                    aH5[this.index].className = 'pear';
-                }
-            }
+    <link rel="stylesheet" href="../css/100.css">
 
+    <script src="../css/100.js">
 
-            var oTupian = document.getElementById('tupian');
-            var oTpian1 = document.getElementById('tupian1');
-            var aImg = oTpian1.getElementsByTagName('img');
-            var aLi = oTupian.getElementsByTagName('li');
-            for (var i = O; i < aLi.length; i++) {
-                aLi[i].index = i;
-                aLi[i].onmouseover = function () {
-                    aLi[this.index].className = '';
-                }
-            }
-
-        }
     </script>
 </head>
 <body>
@@ -268,9 +239,6 @@
                 <div style="clear: left"></div>
 
 
-
-
-
                 <div class="left15">
                     <div class="left16">
                         <p>
@@ -331,7 +299,7 @@
             </div>
 
 
-            <!--效果--><div class="left18">
+            <div class="left18">
                 <div class="left19">
                     <b>
                         <sup>RECOMMEND</sup>
@@ -341,19 +309,21 @@
                 </div>
 
 
-                <div class="left20">
+                <div id="xiao" class="left20"><!--效果-->
                     <p id="tupian1">
                         <img class="photo1" src="../img/meinmv.png" alt="">
                         <img src="../img/2018.1.jpg" alt="">
                         <img src="../img/2018.jpg" alt="">
                     </p>
+
+
                     <ul id="tupian">
                         <li class="photo"><img src="../img/qingxin.png" alt=""></li>
                         <li><img src="../img/qingxin.png" alt=""></li>
                         <li><img src="../img/xiaomei.jpg" alt=""></li>
                     </ul>
                     <span>爸爸去哪儿</span>
-                </div>
+                </div><!--结束-->
 
 
                 <div class="left21">
@@ -398,7 +368,7 @@
                             <i>08/07/22</i>
                         </span>
                 </div>
-            </div><!--结束-->
+            </div>
 
 
             <div class="left22">
@@ -411,10 +381,10 @@
                 </div>
             </div>
             <div class="left24">
-                <p>
-                    <span></span>
-                    <a href=""></a>
-                </p>
+                <a href="">BBS
+                    <span>论坛</span>
+                </a>
+                <p></p>
             </div>
             <div class="left25"></div>
             <div class="left26"></div>
