@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/2018-12.14.css">
+    <script>
+        window.onload = function () {
+            var oBigBox = document.getElementById('bigbox');
+            var oA = oBigBox.getElementsByTagName('a');
+            var aH5 = oBigBox.getElementsByTagName('h5');
+            // var iNow = 0;
+            for (var i = 0; i < oA.length; i++) {
+                oA[i].index = i;
+                oA[i].onmouseover = function () {
+                    // iNow = this.index;
+                    for (var i = 0; i < oA.length; i++) {
+                        oA[i].className = '';
+                        aH5[i].className = '';
+                    }
+                    this.className = 'top';
+                    aH5[this.index].className = 'pear';
+                }
+            }
+
+
+            var oTupian = document.getElementById('tupian');
+            var oTpian1 = document.getElementById('tupian1');
+            var aImg = oTpian1.getElementsByTagName('img');
+            var aLi = oTupian.getElementsByTagName('li');
+            for (var i = O; i < aLi.length; i++) {
+                aLi[i].index = i;
+                aLi[i].onmouseover = function () {
+                    aLi[this.index].className = '';
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="header1">
+        <div class="header2">
+            <span>切换城市:</span>
+            <a href="javascript:;">北京</a>
+            <a href="javascript:;">上海</a>
+            <a href="javascript:;">福州</a>
+            <a href="javascript:;">广州</a>
+            <a href="javascript:;">青岛</a>
+        </div>
+        <div class="header3">
+            <img src="../img/1.png" alt="">
+            <a href="javascript:;">加盟100度</a> |
+            <img src="../img/2.png" alt="">
+            <a href="javascript:;">店铺管理</a>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="nav1">
+        <div class="nav2">
+            <img src="../img/4.png" alt="">
+            <img src="../img/7.png" alt="">
+            <img src="../img/8.png" alt="">
+            <img src="../img/9.png" alt="">
+            <img src="../img/10.png" alt="">
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">夜店</a>
+            <a href="javascript:;">购物</a>
+            <a href="javascript:;">文化</a>
+            <a href="javascript:;">休闲</a>
+        </div>
+        <div class="nav3">
+            <img src="../img/11.png" alt="">
+        </div>
+        <div class="nav4">
+            <img src="../img/12.png" alt="">
+            <img src="../img/13.png" alt="">
+            <img src="../img/14.png" alt="">
+            <img src="../img/5.png" alt="">
+            <img src="../img/6.png" alt="">
+            <a href="javascript:;">烧客空间</a>
+            <a href="javascript:;">知道分之</a>
+            <a href="javascript:;">白吃白拿</a>
+            <a href="javascript:;">烧客论坛</a>
+            <a href="javascript:;">企业俱乐部</a>
+        </div>
+    </div>
+</div>
+<div style="clear: left"></div>
+<div class="sidebar">
+    <div class="sidebar1">
+        <div class="sidebar2">
+            <p>
+                <a href="javascript:;">搜店</a>
+                <a href="javascript:;">地址</a>
+                <a href="javascript:;">优惠券</a>
+                <a href="javascript:;">全文</a>
+                <a href="javascript:;">视频</a>
+            </p>
+            <div class="sidebar3">
+                <img src="../img/33.png" alt="">
+                <div class="sidebar4">
+                    <input type="text" placeholder="例如:荷塘鱼坊烤鱼 或 樱花日本料理">
+                    <i>
+                        <img src="../img/search.png" alt="">
+                    </i>
+                    <div class="sidebar5">
+                        <span>金钱豹,大江南,湘水之珠,德瑀楼</span>
+                        <span>荷塘鱼坊,SOHO尚都,湘味楼...</span>
+                    </div>
+                </div>
+                <div class="sidebar6">
+                    <ul>
+                        <li class="m">UPDATE</li>
+                        <li class="m1">萱萱</li>
+                        <li class="m2">5分钟前</li>
+                        <li class="m3">写了一篇新文章:那些灿烂华美的瞬间...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="" class="" about=""></div>
+<div class="left">
+    <div class="left1"><!--center-->
+        <div class="left2"><!--left-->
+            <div class="left3">
+                <b>WHAT`HOT
+                    <img src="../img/play.png" alt="">
+                </b>
+                <div class="left4">
+                    <video src="../img/lrOl9LQoePRAgnHcKKaQmMWxx9qv.mp4" autoplay controls></video>
+                </div>
+                <div class="left5">
+                    <p>
+                        <img src="../img/hot.png" alt="">
+                        <span><i>·</i> 现场实录:杭州机场国航系统的崩溃</span>
+                        <span><i>·</i> 网友自拍国航航班晚点的遭遇</span>
+                        <span><i>·</i>【拍客】绝对最奢侈的航班注意第41秒</span>
+                    </p>
+                </div>
+            </div>
+            <div class="left6" id="bigbox">
+                <div id="left7">
+                    <a class="top" style="margin-left: 0;" href="javascript:;">HOT SHOP<span>红店铺</span><i></i></a>
+                    <a href="javascript:;">EW GHOP<span>新开张</span><i></i></a>
+                </div>
+
+                <h5 class="pear">
+                    <div class="left8">
+                        <div class="left9">
+                            <img class="left9" src="../img/img-1.jpg" alt="">
+                        </div>
+                        <i>
+                            <img src="../img/34.png" alt="">
+                        </i>
+                        <b>
+                            <img src="../img/hot-1.png" alt="">
+                        </b>
+                        <span>御舟和涵珍园国际酒店</span>
+                        <p>区域:朝阳/CBD</p>
+                        <p>人均:180元</p>
+                        <p>人气:12321</p>
+                    </div>
+                    <div class="left8">
+                        <div class="left9">
+                            <img src="../img/img-1.jpg" alt="">
+                        </div>
+                        <!--<i>-->
+                        <!--&lt;!&ndash;<img src="../img/34.png" alt="">&ndash;&gt;-->
+                        <!--</i>-->
+                        <b>
+                            <img src="../img/hot-1.png" alt="">
+                        </b>
+                        <span>御舟和涵珍园</span>
+                        <p>区域:朝阳/CBD</p>
+                        <p>人均:180元</p>
+                        <p>人气:12321</p>
+                    </div>
+                    <div class="left8">
+                        <div class="left9">
+                            <img src="../img/img-1.jpg" alt="">
+                        </div>
+                        <!--<i>-->
+                        <!--&lt;!&ndash;<img src="../img/34.png" alt="">&ndash;&gt;-->
+                        <!--</i>-->
+                        <b>
+                            <img src="../img/hot-1.png" alt="">
+                        </b>
+                        <span>御舟和涵珍园</span>
+                        <p>区域:朝阳/CBD</p>
+                        <p>人均:180元</p>
+                        <p>人气:12321</p>
+                    </div>
+                </h5>
+
+
+                <h5>
+                    <div class="left8">
+                        <div class="left9">
+                            <img src="../img/img-1.jpg" alt="">
+                        </div>
+                        <i>
+                            <img src="../img/34.png" alt="">
+                        </i>
+                        <b>
+                            <img src="../img/hot-1.png" alt="">
+                        </b>
+                        <span>御舟和涵珍园</span>
+                        <p>区域:朝阳/CBD</p>
+                        <p>人均:180元</p>
+                        <p>人气:12321</p>
+                    </div>
+                    <div class="left8">
+                        <div class="left9">
+                            <img src="../img/img-1.jpg" alt="">
+                        </div>
+                        <i>
+                            <img src="../img/34.png" alt="">
+                        </i>
+                        <b>
+                            <img src="../img/hot-1.png" alt="">
+                        </b>
+                        <span>御舟和涵珍园国际酒店</span>
+                        <p>区域:朝阳/CBD</p>
+                        <p>人均:180元</p>
+                        <p>人气:12321</p>
+                    </div>
+                    <div class="left8">
+                        <div class="left9">
+                            <img src="../img/img-1.jpg" alt="">
+                        </div>
+                        <i>
+                            <img src="../img/34.png" alt="">
+                        </i>
+                        <b>
+                            <img src="../img/hot-1.png" alt="">
+                        </b>
+                        <span>御舟和涵珍园国际酒店</span>
+                        <p>区域:朝阳/CBD</p>
+                        <p>人均:180元</p>
+                        <p>人气:12321</p>
+                    </div>
+                </h5>
+            </div>
+            <div class="left10">
+                <img src="../img/100度_03.jpg" alt="">
+            </div>
+            <div class="left11">
+                <div class="left12">
+                    <div class="left13">
+                        <sup>LUCKY YODAY</sup>
+                        <span>每日活动</span>
+                    </div>
+                    <p>2014.2</p>
+                    <b><img src="../img/shadow.png" alt=""></b>
+                    <div class="left14">
+                        <img src="../img/15.png" alt="">
+                        <i>07</i>
+                        <i style="margin-left: 3px;">21</i>
+                        <span>本日主题XXXXXXXX</span>
+                        <b>迟到的荣誉--维米尔的写实主义风俗画迟到的荣誉维米尔画迟到的荣誉维米尔米尔米尔</b>
+                    </div>
+                </div>
+                <div style="clear: left"></div>
+                <div class="left15">
+                    <div class="left16">
+                        <p>
+                            <span style="margin-left: 11px;">MON</span>
+                            <span>TUE</span>
+                            <span>WED</span>
+                            <span>THU</span>
+                            <span>FRI</span>
+                            <span>SAT</span>
+                            <span>SUN</span>
+                        </p>
+                        <div class="left17">
+                            <i style="margin-left: 1px;">29</i>
+                            <i>30</i>
+                            <i>1</i>
+                            <i>2</i>
+                            <i>3</i>
+                            <i>4</i>
+                            <i>5</i>
+                            <i style="margin-left: 1px;">6</i>
+                            <i>7</i>
+                            <i>8</i>
+                            <i>9</i>
+                            <i>10</i>
+                            <i>11</i>
+                            <i>12</i>
+                            <i style="margin-left: 1px;">13</i>
+                            <i>14</i>
+                            <i>15</i>
+                            <i>16</i>
+                            <i>17</i>
+                            <i>18</i>
+                            <i>19</i>
+                            <i style="margin-left: 1px;">20</i>
+                            <i>21</i>
+                            <i>22</i>
+                            <i>23</i>
+                            <i>24</i>
+                            <i>25</i>
+                            <i>26</i>
+                            <i style="margin-left: 1px;">26</i>
+                            <i>27</i>
+                            <i>28</i>
+                            <i>29</i>
+                            <i>30</i>
+                            <i>31</i>
+                            <i>1</i>
+                            <i style="margin-left: 1px;">2</i>
+                            <i>3</i>
+                            <i>4</i>
+                            <i>5</i>
+                            <i>6</i>
+                            <i>7</i>
+                            <i>8</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="left18">
+                <div class="left19">
+                    <b>
+                        <sup>RECOMMEND</sup>
+                        <i>精彩推荐</i>
+                    </b>
+                    <img src="../img/best.png" alt="">
+                </div>
+
+
+                <div class="left20">
+                    <p id="tupian1">
+                        <img class="photo1" src="../img/meinmv.png" alt="">
+                        <img src="../img/2018.1.jpg" alt="">
+                        <img src="../img/2018.jpg" alt="">
+                    </p>
+                    <ul id="tupian">
+                        <li class="photo"><img src="../img/qingxin.png" alt=""></li>
+                        <li><img src="../img/qingxin.png" alt=""></li>
+                        <li><img src="../img/xiaomei.jpg" alt=""></li>
+                    </ul>
+                    <span>爸爸去哪儿</span>
+                </div>
+
+
+                <div class="left21">
+                        <span>
+                            <img src="../img/22.png" alt=""> |
+                            <a href="javascript:;">老店换新颜,丰泽圆野田重张亮相...</a>
+                            <i>08/07/22</i>
+                        </span>
+                    <span>
+                            <img src="../img/22.png" alt=""> |
+                            <a href="javascript:;">老店换新颜,丰泽圆野田重张亮相...</a>
+                            <i>08/07/22</i>
+                        </span>
+                    <span>
+                            <img src="../img/22.png" alt=""> |
+                            <a href="javascript:;">老店换新颜,丰泽圆野田重张亮相...</a>
+                            <i>08/07/22</i>
+                        </span>
+                    <span>
+                            <img src="../img/22.png" alt=""> |
+                            <a href="javascript:;">老店换新颜,丰泽圆野田重张亮相...</a>
+                            <i>08/07/22</i>
+                        </span>
+                    <span>
+                            <img src="../img/22.png" alt=""> |
+                            <a href="javascript:;">老店换新颜,丰泽圆野田重张亮相...</a>
+                            <i>08/07/22</i>
+                        </span>
+                    <span>
+                            <img src="../img/22.png" alt=""> |
+                            <a href="javascript:;">老店换新颜,丰泽圆野田重张亮相...</a>
+                            <i>08/07/22</i>
+                        </span>
+                    <span>
+                            <img src="../img/22.png" alt=""> |
+                            <a href="javascript:;">老店换新颜,丰泽圆野田重张亮相...</a>
+                            <i>08/07/22</i>
+                        </span>
+                    <span>
+                            <img src="../img/22.png" alt=""> |
+                            <a href="javascript:;">老店换新颜,丰泽圆野田重张亮相...</a>
+                            <i>08/07/22</i>
+                        </span>
+                </div>
+            </div>
+
+
+            <div class="left22">
+                <div class="left7">
+                    <a style="margin-left: 0;" href="javascript:;">SUBWAY<span>地铁交通</span><i></i></a>
+                    <a href="javascript:;">MAP<span>生活圈</span><i></i></a>
+                </div>
+                <div class="left23">
+                    <img src="../img/subway-map_03.png" alt="">
+                </div>
+            </div>
+            <div class="left24">
+                <p>
+                    <span></span>
+                    <a href=""></a>
+                </p>
+            </div>
+            <div class="left25"></div>
+            <div class="left26"></div>
+            <div class="left27"></div>
+            <div class="left28"></div>
+
+        </div><!--left-->
+        <div class="right"><!--right-->
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+            <div class="right"></div>
+
+        </div><!--right-->
+    </div><!--center-->
+</div>
+</body>
+</html>
